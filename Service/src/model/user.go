@@ -9,8 +9,11 @@ type User struct {
 	// 权限
 	Privilege 	int
 	// 状态
+	// 0 - 正常
+	// 1 - 受限(仅能下载)
 	State		int
 	// 空间使用情况
+	// 单位 1KB
 	EmptySpace	int
 	UseSpace	int
 	// 分享码
