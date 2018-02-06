@@ -8,7 +8,9 @@ import (
 func main() {
 	r := gin.Default()
 
+	// Bind router
 	initialBind(r)
 
-	r.Run(config.ListenAddress) // listen and serve on 0.0.0.0:8080
+	// listen and serve
+	r.Run(config.ListenAddress)
 }

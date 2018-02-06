@@ -1,5 +1,11 @@
 package model
 
+import (
+	"crypto/md5"
+	"os"
+	"io"
+)
+
 type CloudFile struct {
 	Id 			string
 	// 文件类型
@@ -23,4 +29,17 @@ type CloudFile struct {
 
 func (file *CloudFile)getFullPath() string {
 	return file.Path + file.NewName
+}
+
+func (file *CloudFile)setHashCode() {
+	hash := md5.New()
+
+	if fileIn, err := os.Open(file.getFullPath());err != nil {
+		IOErr.Error()
+		return
+	} else {
+		io.Copy(hash, fileIn)
+	}
+
+	file.HashCode = (string)(hash.Sum(nil))
 }

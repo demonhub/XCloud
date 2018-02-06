@@ -5,6 +5,10 @@ import (
 )
 
 var (
+
+	// 文件读取错误
+	IOErr = errors.New("I/O Error")
+
 	// 数据库打开错误
 	DBErr = errors.New("DB Open Error")
 
