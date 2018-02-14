@@ -1,5 +1,7 @@
 package model
 
+import "db"
+
 type User struct {
 	Id 			string
 	// 用户名
@@ -18,4 +20,14 @@ type User struct {
 	UseSpace	int
 	// 分享码
 	ShareCode	string
+}
+
+func QueryById(Id string) (User,error) {
+	db.DB.Exec("SELECT * FROM USER WHERE ID=?",Id)
+}
+
+func checkErr(err error) {
+	if err != nil {
+		panic(err)
+	}
 }

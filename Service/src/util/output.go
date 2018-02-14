@@ -1,5 +1,5 @@
 package util
 
-func ErrorJSON(err error) {
+func GetErrorJSON(err error) {
 
 }

@@ -3,9 +3,13 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"config"
+	"db"
 )
 
 func main() {
+	// Connect database
+	db.InitDatabase()
+
 	r := gin.Default()
 
 	// Bind router
