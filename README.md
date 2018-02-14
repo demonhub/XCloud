@@ -1,3 +1,3 @@
 # XCloud
-![XCloud](https://github.com/Lqlsoftware/XCloud/blob/UI/Logo/XCLOUD.svg?raw=true)
-A open source compus-cloud-disk.
+A open-source compus-cloud-disk.
+![XCloud](https://raw.githubusercontent.com/Lqlsoftware/XCloud/master/UI/Logo/XCLOUD.svg?sanitize=true)
