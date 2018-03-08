@@ -6,6 +6,9 @@ import (
 
 var (
 
+	// User
+	LoginErr = errors.New("用户名/密码错误")
+
 	// FILE ERRORs
 	// 文件读取错误
 	IOErr = errors.New("I/O Error")
