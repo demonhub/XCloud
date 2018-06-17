@@ -1,0 +1,39 @@
+/*布局*/
+html, body, div, p, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, em {font-family: "Microsoft YaHei"; margin:0; padding:0;}
+body {background: #f5f5f5; color: #000; -webkit-text-size-adjust: none; line-height: 1.42858; font-size: 14px;  min-width: 1200px;}
+h1, h2, h3, h4, h5, h6, p{white-space: pre; letter-spacing: 1px; font-weight: normal;}
+a {text-decoration: none; color: inherit; font-size: inherit;}
+ul, ol {list-style: none outside; }
+:focus, :active {outline: none }
+	/*input中的placeholder设置*/
+input::-webkit-input-placeholder {color: #a0a0a0;}
+	/*关于解决输入框背景颜色*/
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset !important;}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/  
+select {appearance: none; -moz-appearance: none; -webkit-appearance: none; border: 1px solid #a9a9a9; padding-left: 4px;}
+select::-ms-expand { display: none; } 
+
+/*主交互界面*/
+	/*最上的导航栏*/
+.navigation {height: 72px; background: #000; width: 100%;}
+.navigation img {width: 90px; margin: 5px 20px; float: left;}
+.navigation .logoname {color: white; float: left; margin-top: 13px; font-size: 36px;}
+.navigation .option {color: white; float: left; margin-top: 18px; margin-left: 60px; font-size: 26px; cursor: pointer; letter-spacing: 1px;}
+		/*激活时的文字样式，下划线*/
+.navigation .active {border-bottom: 3px solid #fff; padding-bottom: 5px; }
+.navigation .username {color: white; font-size: 25px; float: right; margin: 18px 40px; letter-spacing: 1px;}
+	/*左侧菜单栏*/
+.left-menu {background: #ececec; width: 18%; position: absolute; bottom: 0; height: 88%}
+.portrait {width: 150px; height: 150px; border-radius: 50%; background: #fff; margin-top: 40px; margin-bottom: 18px; background: url(../img/default.jpg) no-repeat; background-size: 240px;}
+.name {font-size: 24px; margin-bottom: 20px;}
+.label {font-size: 22px; padding: 8px 0;}
+.label img {width: 20px; margin-right: 18px; vertical-align: baseline;}
+.label_bottom {font-size: 22px; position: absolute; bottom: 20px; left: 80px;}
+.label_bottom img {width: 20px; margin-right: 18px; vertical-align: baseline;}
+
+.right {background: #fff; width: 78%; position: absolute; bottom: 0; right: 0;height: 77%; border-radius: 12px 12px 0 12px; padding: 40px 20px;}
+.upload {background: #574ab8; color: #fff; width: 64px; height: 30px; line-height: 30px; padding: 0 10px; float: left; margin-right: 15px;}
+.upload img {margin-right: 10px; font-size: 18px; vertical-align: text-bottom;}
+.new {background: #fff; color: #5347b7; width: 102px; height: 30px; line-height: 30px; padding: 0 10px; border: 1px solid #d1cde8; float: left;}
+.new img {margin-right: 10px; font-size: 18px; vertical-align: text-bottom;}
+
